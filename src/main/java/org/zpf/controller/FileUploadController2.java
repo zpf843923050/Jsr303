@@ -72,7 +72,7 @@ public class FileUploadController2 {
         HttpHeaders headers = new HttpHeaders();
         //下载显示的文件名,解决中文乱码问题
         String downloadFileName = new String(fileName.getBytes("utf-8"), "iso-8859-1");
-        //通知浏览器以attachment下载方式打开图片
+        //通知浏览器以attachment下载方式打开图·片
         headers.setContentDispositionFormData("attachment", downloadFileName);
         //application/octet-stream:二进制流数据//最常见的文件下载
         headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);
